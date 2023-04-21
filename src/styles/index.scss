@@ -1,0 +1,63 @@
+@font-face {
+    font-family: selino-regular;
+    src: url('../fonts/Selino-Regular-BF63bcc47b127b4.otf');
+}
+
+@font-face {
+    font-family: selino-italic;
+    src: url('../fonts/Selino-Italic-BF63bcc484cdc3e.otf');
+}
+
+@font-face {
+    font-family: creattion;
+    src: url('../fonts/Creattion\ Demo.otf') format('woff2');
+}
+
+@font-face {
+    font-family: suisseInt;
+    src: url('../fonts/SuisseIntl-Regular.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: suisseWorks;
+    src: url('../fonts/SuisseWorks-Regular.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: sourceSansEL;
+    src: url('../fonts/SourceSansPro-ExtraLightIt.otf') format('woff2');
+}
+
+@font-face {
+    font-family: sourceSansL;
+    src: url('../fonts/SourceSansPro-Light.otf') format('woff2');
+}
+
+@font-face {
+    font-family: sourceSansR;
+    src: url('../fonts/SourceSansPro-Regular.otf') format('woff2');
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+:root { 
+    --main-color: #10101a;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --lightgray-color: #D3D3D3;
+    --dark-color: #20222e;
+
+    
+    --selino-regular: "selino-regular", sans-serif;
+    --selino-italic: "selino-italic", sans-serif;
+    --creattion: "creattion", sans-serif;
+    --suisse-works: "suisseWorks", sans-serif;
+    --suisse-int: "suisseInt", sans-serif;
+    --source-el: "sourceSansEL", sans-serif;
+    --source-l: "sourceSansL", sans-serif;
+    --source-r: "sourceSansR", sans-serif;
+}

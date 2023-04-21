@@ -1,0 +1,647 @@
+@import './index.scss';
+
+@mixin block {
+    overflow: hidden;
+}
+
+@mixin block-text {
+    @include flex-center;
+    overflow: hidden;
+    font: 1.5rem var(--source-l);
+    margin-bottom: .7rem;
+    word-spacing: .1rem;
+    letter-spacing: .15rem;
+}
+
+.main {
+    width: 100%;
+    height: 92vh;
+
+    @include flex-center;
+    flex-direction: column;
+
+    .main-wrap {
+        text-align: center;
+
+        .main-one {
+            @include block;
+
+            .main-one-text {
+                @include block-text;
+                
+                font: 6rem var(--suisse-works);
+                letter-spacing: .5rem;
+
+                .main-one-minus {
+                    font: 6rem "Aria";
+                }
+            }
+        }
+
+        .main-two {
+            @include block;
+    
+            .main-two-text {
+                @include block-text;
+            }
+        }
+    
+        .main-three {
+            @include block;
+    
+            .main-three-text {
+                @include block-text;
+            }
+        }
+    
+        .main-four {
+            @include block;
+
+            .main-four-text {
+                @include block-text;
+            }
+        }
+    
+        .main-five {
+            @include block;
+    
+            .main-five-text {
+                @include block-text;
+            }
+        }
+    }
+
+    .main-scroll-down-wrap {
+        overflow: hidden;
+
+        position: relative;
+        top: 18rem;
+
+        .main-scroll-down {
+            border: 3px solid var(--white-color);
+            cursor: pointer;
+           
+            padding: 1rem .3rem;
+            border-radius: 1rem;
+            transition: all .7s ease-in-out;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+            
+            .fa-bounce {
+                animation: bounce 2s infinite;
+                border-radius: 3rem;
+                font-size: 1rem;
+            }
+        
+            @keyframes bounce {
+                0%, 20%, 50%, 80%, 100% {
+                    transform: translateY( 1rem );
+                }
+                40% {
+                    transform: translateY(-.5rem);
+                }
+                60% {
+                    transform: translateY(-1rem);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and ( max-width: 1440px ) {
+    .main {
+        
+        .main-wrap {
+    
+            .main-one {
+    
+                .main-one-text {
+                    font-size: 4.5rem;
+    
+                    .main-one-minus {
+                        font-size: 4.5rem;
+                    }
+                }
+            }
+    
+            .main-two {
+        
+                .main-two-text {
+                    font-size: 1.3rem;
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    font-size: 1.3rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    font-size: 1.3rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    
+        .main-scroll-down-wrap {
+            top: 15rem;
+    
+            .main-scroll-down {
+                border: 2.5px solid var(--white-color);
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 1024px ) {
+    .main {
+        
+        .main-wrap {
+    
+            .main-one {
+    
+                .main-one-text {
+                    font-size: 3.7rem;
+    
+                    .main-one-minus {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+    
+            .main-two {
+        
+                .main-two-text {
+                    font-size: 1.2rem;
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    font-size: 1.2rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    font-size: 1.2rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    
+        .main-scroll-down-wrap {
+            top: 14rem;
+    
+            .main-scroll-down {
+                border: 2.3px solid var(--white-color);
+
+                .fa-bounce {
+                    font-size: .9rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 912px ) {
+    .main {
+        
+        .main-wrap {
+    
+            .main-two {
+        
+                .main-two-text {
+                    letter-spacing: .1rem;
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    letter-spacing: .1rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    letter-spacing: .1rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    letter-spacing: .1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 820px ) {
+    .main {
+        
+        .main-wrap {
+        
+            .main-three {
+        
+                .main-three-text {
+                    letter-spacing: .07rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    letter-spacing: .07rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    letter-spacing: .09rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    .main {
+        
+        .main-wrap {
+    
+            .main-one {
+    
+                .main-one-text {
+                    font-size: 3rem;
+    
+                    .main-one-minus {
+                        font-size: 3rem;
+                    }
+                }
+            }
+    
+            .main-two {
+        
+                .main-two-text {
+                    font-size: 1.1rem;
+                    letter-spacing: .1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    font-size: 1.1rem;
+                    letter-spacing: .07rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    font-size: 1rem;
+                    letter-spacing: .1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    font-size: 1rem;
+                    letter-spacing: .1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    
+        .main-scroll-down-wrap {
+            top: 14rem;
+    
+            .main-scroll-down {
+                border: 2px solid var(--white-color);
+
+                .fa-bounce {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 540px ) {
+    .main {
+        
+        .main-wrap {
+
+            .main-one {
+
+                .main-one-text {
+                    font-size: 2.1rem;
+    
+                    .main-one-minus {
+                        font-size: 2.1rem;
+                    }
+                }
+            }
+    
+            .main-two {
+        
+                .main-two-text {
+                    font-size: .9rem;
+                    letter-spacing: .02rem;
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    font-size: .8rem;
+                    letter-spacing: .01rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    font-size: .8rem;
+                    letter-spacing: .01rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    font-size: .9rem;
+                    letter-spacing: .01rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 425px ) {
+    .main {
+        
+        .main-wrap {
+
+            .main-one {
+    
+                .main-one-text {
+                    font-size: 1.8rem;
+                    letter-spacing: .4rem;
+    
+                    .main-one-minus {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+    
+            .main-two {
+        
+                .main-two-text {
+                    flex-direction: column;
+    
+                    font-size: .9rem;
+                    letter-spacing: .1rem;
+
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    flex-direction: column;
+                    font-size: .9rem;
+                    letter-spacing: .1rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    flex-direction: column;
+                    font-size: .9rem;
+                    letter-spacing: .1rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    flex-direction: column;
+                    font-size: .9rem;
+                    letter-spacing: .1rem;
+                }
+            }
+        }
+
+        .main-scroll-down-wrap {
+            top: 11rem;
+        }
+    }
+}
+
+@media screen and ( max-width: 393px ) {
+    .main {
+        
+        .main-wrap {
+
+            .main-one {
+
+                .main-one-text {
+                    font-size: 1.8rem;
+                    letter-spacing: .3rem;
+    
+                    .main-one-minus {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        .main-scroll-down-wrap {
+            top: 10rem;
+
+            .main-scroll-down {
+                border: .13rem solid var(--white-color);
+
+                .fa-bounce {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 360px ) {
+    .main {
+        
+        .main-wrap {
+
+            .main-one {
+    
+                .main-one-text {
+                    letter-spacing: .15rem;
+                }
+            }
+
+            .main-two {
+        
+                .main-two-text {
+                    font-size: .8rem;
+
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    font-size: .8rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    font-size: .8rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .main-scroll-down-wrap {
+            top: 12rem;
+
+            .main-scroll-down {
+                border: .12rem solid var(--white-color);
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 320px ) {
+    .main {
+        
+        .main-wrap {
+
+            .main-one {
+    
+                .main-one-text {
+                    letter-spacing: .1rem;
+                }
+            }
+
+            .main-two {
+        
+                .main-two-text {
+                    font-size: .75rem;
+
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    font-size: .75rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    font-size: .75rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 280px ) {
+    .main {
+        
+        .main-wrap {
+
+            .main-one {
+    
+                .main-one-text {
+                    font-size: 1.5em;
+    
+                    .main-one-minus {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .main-two {
+        
+                .main-two-text {
+                    font-size: .7rem;
+
+                }
+            }
+        
+            .main-three {
+        
+                .main-three-text {
+                    font-size: .66rem;
+                }
+            }
+        
+            .main-four {
+    
+                .main-four-text {
+                    font-size: .66rem;
+                }
+            }
+        
+            .main-five {
+        
+                .main-five-text {
+                    font-size: .66rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@import './index.scss';
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+
+    @include flex-center;
+     
+    .loader-wrap {
+        width: 10%;
+        height: 20vh;
+
+        @include flex-center;
+        flex-direction: column;
+
+        .loader-logo {
+            width: 100%;
+            height: 90%;
+
+            @include flex-center;
+    
+            font: 5.5rem var(--creattion); 
+    
+            cursor: pointer;
+        }
+    
+        .loader-bar {
+            width: 100%;
+            height: 10%;
+
+            @include flex-center;
+        }
+    }
+}
+
+@media screen and ( max-width: 1440px ) {
+    .loader {
+
+        .loader-wrap {
+            width: 15%;
+            height: 25vh;
+        }
+    }
+}
+
+@media screen and ( max-width: 1024px ) {
+    .loader {
+
+        .loader-wrap {
+            width: 18%;
+            height: 28vh;
+        }
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    .loader {
+
+        .loader-wrap {
+            width: 21%;
+            height: 31vh;
+        }
+    }
+}
+
+@media screen and ( max-width: 425px ) {
+    .loader {
+
+        .loader-wrap {
+            width: 50%;
+            height: 30vh;
+        }
+    }
+}
+
+@media screen and ( max-width: 375px ) {
+    .loader {
+
+        .loader-wrap {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and ( max-width: 320px ) {
+    .loader {
+
+        .loader-wrap {
+            width: 70%;
+        }
+    }
+}

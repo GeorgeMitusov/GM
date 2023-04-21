@@ -1,0 +1,147 @@
+@import './index.scss';
+
+.header {
+    width: 100%;
+    height: 6rem;
+
+    @include flex-center;
+
+    .header-wrap {
+        width: 90%;
+        height: 100%;
+
+        @include flex-center;
+        justify-content: space-between;
+
+        .header-logo {
+            width: 5%;
+            height: 100%;
+
+            @include flex-center;
+
+            font: 3.5rem var(--creattion); 
+
+            cursor: pointer;
+        }
+
+        button {
+            font: 1.7rem var(--selino-italic);
+            
+            background-color: transparent;
+            color: var(--lightgray-color);
+            
+            cursor: pointer;
+            border: none;
+
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: var(--white-color);
+            }
+        }
+    }
+}
+
+
+@media screen and ( max-width: 1440px ) {
+    .header {
+        .header-wrap {
+    
+            .header-logo {
+                width: 10%;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 1024px ) {
+    .header {
+        .header-wrap {
+    
+            .header-logo {
+                width: 15%;
+                font-size: 3rem;
+            }
+    
+            button {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    .header {
+
+        .header-wrap {
+            width: 100%;
+    
+            .header-logo {
+                width: 20%;
+            }
+    
+            button {
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 540px ) {
+    .header {
+
+        .header-wrap {
+
+            .header-logo {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 425px ) {
+    .header {
+
+        .header-wrap {
+    
+            .header-logo {
+                margin-left: .5rem;
+                font-size: 2.5rem;
+            }
+    
+            button {
+                margin-right: 1.5rem;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 320px ) {
+    .header {
+
+        .header-wrap {
+    
+            .header-logo {
+                width: 30%;
+                font-size: 2rem;
+            }
+
+            button {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+@media screen and ( max-width: 280px ) {
+    .header {
+
+        .header-wrap {
+
+            button {
+                margin-right: 1rem;
+            }
+        }
+    }
+}

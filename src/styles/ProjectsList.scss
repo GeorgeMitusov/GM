@@ -1,0 +1,64 @@
+@import './index.scss';
+
+.projects-list {
+    height: auto;
+    width: 100%;
+    background-color: var(--main-color);
+
+    text-align: center;
+    font-size: 2rem;
+
+    margin-top: 5rem;
+    padding-top: 5rem;
+
+    @include flex-center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .projects-list-wrap {
+        margin: 5rem 0rem;
+        width: 40%;
+        height: auto;
+
+        @include flex-center;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+@media screen and ( max-width: 1024px ) {
+    .projects-list {
+    
+        .projects-list-wrap {
+            width: 55%;
+        }
+    }
+}
+
+@media screen and ( max-width: 768px ) {
+    .projects-list {
+    
+        .projects-list-wrap {
+            width: 65%;
+        }
+    }
+}
+
+@media screen and ( max-width: 540px ) {
+    .projects-list {
+    
+        .projects-list-wrap {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and ( max-width: 425px ) {
+    .projects-list {
+    
+        .projects-list-wrap {
+            width: 90%;
+            margin-bottom: 3rem;
+        }
+    }
+}
