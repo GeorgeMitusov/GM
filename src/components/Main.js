@@ -18,13 +18,13 @@ const Main = () => {
                 animate={{ y: 0 }}
                 transition={{ duration: 1, delay: i.delay1, ease: "easeIn" }}
             >   
-                <motion.div>
+                <motion.span>
                     <span> {i.text1} </span>
-                </motion.div>
+                </motion.span>
 
-                <motion.div> <span> &nbsp; </span> </motion.div>
+                <motion.span> <span> &nbsp; </span> </motion.span>
 
-                <motion.div
+                <motion.span
                     initial={{ y: 100 }}
                     animate={{ y: 0 }}
                     transition={{ duration: 1, delay: i.delay2, ease: "easeIn" }}
@@ -32,7 +32,7 @@ const Main = () => {
                     <span>
                         { i.text2 }
                     </span>
-                </motion.div>
+                </motion.span>
             </motion.p>   
         </div>
     ))
