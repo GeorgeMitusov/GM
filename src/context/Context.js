@@ -75,7 +75,7 @@ const projectsData = [
   {
     image: ProjectPicThree,
     title: 'Currency Converter',
-    link: ''
+    link: 'https://currency-swap.onrender.com'
   },
   {
     image: ProjectPicSix,
@@ -85,7 +85,7 @@ const projectsData = [
   {
     image: ProjectPicFive,
     title: 'Pokedex App',
-    link: ''
+    link: 'https://pokedex-9jdo.onrender.com'
   }
 ]
 
