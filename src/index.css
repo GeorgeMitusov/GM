@@ -1,13 +1,63 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: creattion;
+  src: url("./fonts/Creattion Demo.otf") format("woff2");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: selino-regular;
+  src: url("./fonts/Selino-Regular-BF63bcc47b127b4.otf");
+}
+
+@font-face {
+  font-family: selino-italic;
+  src: url("./fonts/Selino-Italic-BF63bcc484cdc3e.otf");
+}
+
+@font-face {
+  font-family: suisseInt;
+  src: url("./fonts/SuisseIntl-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: suisseWorks;
+  src: url("./fonts/SuisseWorks-Regular.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: sourceSansEL;
+  src: url("./fonts/SourceSansPro-ExtraLightIt.otf") format("woff2");
+}
+
+@font-face {
+  font-family: sourceSansL;
+  src: url("./fonts/SourceSansPro-Light.otf") format("woff2");
+}
+
+@font-face {
+  font-family: sourceSansR;
+  src: url("./fonts/SourceSansPro-Regular.otf") format("woff2");
+}
+
+@keyframes bounce-custom {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0.8rem);
+  }
+  40% {
+    transform: translateY(-0.3rem);
+  }
+  60% {
+    transform: translateY(-0.7rem);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-custom 2s infinite;
 }
