@@ -25,6 +25,7 @@ function App() {
   return (
     <AnimatePresence>
       {/* {loader ? <Loader /> : <AppContent />} */}
+      {/* <Loader/> */}
       <AppContent />
     </AnimatePresence>
   );

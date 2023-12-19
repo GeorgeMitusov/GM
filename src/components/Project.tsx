@@ -60,7 +60,7 @@ export default function Project({ title, image, link }: ProjectDataModel) {
         className="card-body text-thirdColor transition ease-in-out 
           duration-700 peer-hover:text-fourthColor"
       >
-        <h2 className="card-title font-medium text-2xl font-suisseWorks text-center">
+        <h2 className="card-title font-medium text-2xl mdMobile:text-3xl font-suisseWorks text-center">
           {" "}
           {title}{" "}
         </h2>

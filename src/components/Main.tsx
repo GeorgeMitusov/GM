@@ -12,11 +12,17 @@ export default function Main() {
   const block = mainTitleData.map((item, index) => (
     <div
       key={index}
-      className="w-full flex flex-col justify-center items-center overflow-hidden text-center
+      className="w-full flex flex-col justify-center mdMobile:justify-around items-center
+        overflow-hidden text-center 
+        mdMobile:h-12 lgMobile:h-16 lgMobile:px-2 
       "
     >
       <motion.p
-        className="font-suisseWorks text-xs font-thin leading-loose tracking-wide mr-1"
+        className="font-suisseWorks 
+          text-xs mdMobile:text-sm lgMobile:text-md
+          font-thin leading-loose tracking-wide mr-1 mdMobile:tracking-wider
+            mdMobile:leading-relaxed lgMobile:leading-loose
+          "
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, delay: item.delay1, ease: "easeIn" }}
@@ -25,7 +31,8 @@ export default function Main() {
       </motion.p>
 
       <motion.p
-        className="font-suisseWorks text-xs font-thin leading-loose tracking-wide"
+        className="font-suisseWorks text-xs mdMobile:text-sm lgMobile:text-md
+          font-thin leading-loose tracking-wide"
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, delay: item.delay2, ease: "easeIn" }}
@@ -36,16 +43,21 @@ export default function Main() {
   ));
 
   return (
-    <div className="hero h-5/6 flex flex-col justify-around ">
+    <div className="hero h-5/6 lgMobile:h-4/5 flex flex-col justify-around 
+      
+      ">
       <div 
-        className="w-full h-full flex flex-col justify-center items-center 
+        className="w-full h-full mdMobile:h-5/6 flex flex-col justify-center items-center
         "
+        // border border-cyan-300
       >
         
         <div 
-          className="w-10/12 flex justify-around items-center overflow-hidden font-suisseWorks
-            text-fourthColor text-2xl mb-4 px-2
+          className="w-10/12 lgMobile:w-11/12 flex justify-around items-center overflow-hidden
+              font-suisseWorks text-fourthColor mb-2 lgMobile:mb-1 lgMobile:mt-10
+              text-2xl mdMobile:text-3xl lgMobile:text-4xl px-2 lgMobile:px-2.5 mdMobile:p-0
           "
+            // border border-pink-300
         >
           <AnimatedText text="Front-end" delay={0.7} />
           <AnimatedText text="Developer" delay={0.9} />
