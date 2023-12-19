@@ -14,7 +14,7 @@ export default function Main() {
       key={index}
       className="w-full flex flex-col justify-center mdMobile:justify-around items-center
         overflow-hidden text-center 
-        mdMobile:h-12 lgMobile:h-16 lgMobile:px-2 
+        mdMobile:h-12 lgMobile:h-16 lgMobile:px-2 sm:px-8
       "
     >
       <motion.p
@@ -44,18 +44,18 @@ export default function Main() {
 
   return (
     <div className="hero h-5/6 lgMobile:h-4/5 flex flex-col justify-around 
-      
       ">
       <div 
-        className="w-full h-full mdMobile:h-5/6 flex flex-col justify-center items-center
+        className="w-full sm:w-9/12 h-full mdMobile:h-5/6 flex flex-col justify-center items-center
         "
         // border border-cyan-300
       >
         
         <div 
-          className="w-10/12 lgMobile:w-11/12 flex justify-around items-center overflow-hidden
+          className="w-10/12 lgMobile:w-11/12 sm:w-10/12 flex justify-around items-center overflow-hidden
               font-suisseWorks text-fourthColor mb-2 lgMobile:mb-1 lgMobile:mt-10
-              text-2xl mdMobile:text-3xl lgMobile:text-4xl px-2 lgMobile:px-2.5 mdMobile:p-0
+              text-2xl mdMobile:text-3xl lgMobile:text-4xl 
+              px-2 lgMobile:px-2.5 mdMobile:p-0
           "
             // border border-pink-300
         >

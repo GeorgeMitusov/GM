@@ -10,11 +10,13 @@ export default function ProjectsList() {
 
   return (
     <section className="w-full h-auto py-36 bg-mainColor 
-      flex flex-col justify-center items-center">
+      flex flex-col justify-center items-center
+
+       ">
 
       <section id="section1"></section>
 
-      <ul className="w-full flex flex-col items-center">{project}</ul>
+      <ul className="w-full sm:w-10/12 flex flex-col items-center">{project}</ul>
 
     </section>
   );

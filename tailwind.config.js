@@ -26,7 +26,8 @@ module.exports = {
         customShadow: "0.1rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5)",
       },
       fontSize: {
-        custom: "17rem",
+        custom10: '10rem',
+        custom17: "17rem",
       },
       fontFamily: {
         sourceL: ["sourceSansL", "sans-serif"],

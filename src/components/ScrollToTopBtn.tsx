@@ -27,7 +27,8 @@ const ScrollToTopBtn = () => {
 
   const btn = (
     <motion.button
-      className="w-10 mdMobile:w-11 h-8 mdMobile:h-10 btn btn-outline text-thirdColor
+      className="w-10 mdMobile:w-11 sm:w-12 h-8 mdMobile:h-10 
+        btn btn-outline text-thirdColor
         transition-all ease-in duration-500 
         fixed bottom-5 mdMobile:bottom-4 right-8 mdMobile:right-4 z-20 hover:text-fourthColor"
       onClick={goToTop}
