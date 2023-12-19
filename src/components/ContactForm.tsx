@@ -5,9 +5,8 @@ import * as Yup from "yup";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function ContactForm() {
-
-  const [ loading, setLoading ] = useState<boolean>(false);
-  const [ messageShow, setMessageShow ] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [messageShow, setMessageShow] = useState<boolean>(false);
 
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
@@ -54,7 +53,8 @@ export default function ContactForm() {
   const succMsg = (
     <motion.div
       role="alert"
-      className="alert w-3/5 h-10 mb-3 flex justify-between items-center shadow-customShadow bg-gradient"
+      className="alert w-full md:w-5/6 h-10 mb-3 flex justify-between items-center 
+        shadow-customShadow bg-gradient"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -73,10 +73,10 @@ export default function ContactForm() {
           d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
         ></path>
       </svg>
-      <span> Your message has been sent. </span>
+      <span className="text-xs md:text-sm"> Your message has been sent. </span>
       <div>
         <button
-          className="btn btn-sm btn-gradient"
+          className="btn btn-xs md:btn-sm btn-gradient"
           onClick={() => setMessageShow(false)}
         >
           {" "}
@@ -89,7 +89,7 @@ export default function ContactForm() {
   return (
     <dialog id="my_modal_2" className="modal">
       <div
-        className="modal-box w-5/6 max-w-3xl h-2/4 bg-mainColor border-secondaryColor
+        className="modal-box w-5/6 max-w-3xl h-3/4 bg-mainColor border-secondaryColor
           border-2 flex flex-col items-center justify-center "
       >
         <AnimatePresence>{messageShow && succMsg}</AnimatePresence>
@@ -105,23 +105,24 @@ export default function ContactForm() {
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
+          {/* border border-emerald-400 */}
           {({ errors, touched }) => (
-            <Form className="w-full h-full flex items-center justify-center">
-              <div className="w-3/4 h-full py-5 flex flex-col items-center justify-between">
+            <Form className="w-full md:w-5/6 h-3/4 flex items-center justify-center ">
+              <div className="w-full h-5/6 flex flex-col items-center justify-between ">
                 <Field
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Name"
-                  className={`input input-bordered input-secondaryColor shadow-customShadow
-                    border border-secondaryColor text-thirdColor w-4/5 h-12 max-w-md bg-gradient 
+                  className={`w-full h-12 input input-bordered input-secondaryColor shadow-customShadow
+                    border border-secondaryColor text-thirdColor bg-gradient 
                     ${errors.name && touched.name ? "border-thirdColor" : ""}
                   `}
                 />
                 <ErrorMessage
                   name="name"
                   component="div"
-                  className="text-thirdColor"
+                  className="text-thirdColor text-sm md:text-md"
                 />
 
                 <Field
@@ -129,8 +130,8 @@ export default function ContactForm() {
                   id="email"
                   name="email"
                   placeholder="Email"
-                  className={`input input-bordered input-mainColor shadow-customShadow 
-                    border border-secondaryColor text-thirdColor w-4/5 h-12 max-w-md 
+                  className={`w-full h-12 input input-bordered input-mainColor shadow-customShadow 
+                    border border-secondaryColor text-thirdColor  
                     bg-gradient ${
                       errors.email && touched.email ? "border-thirdColor" : ""
                     }
@@ -139,7 +140,7 @@ export default function ContactForm() {
                 <ErrorMessage
                   name="email"
                   component="div"
-                  className="text-thirdColor"
+                  className="text-thirdColor text-sm md:text-md"
                 />
 
                 <Field
@@ -147,7 +148,7 @@ export default function ContactForm() {
                   id="message"
                   name="message"
                   placeholder="Message"
-                  className={`w-4/5 h-18 textarea textarea-thirdColor shadow-customShadow 
+                  className={`w-full h-18 textarea textarea-thirdColor shadow-customShadow 
                     border border-secondaryColor text-thirdColor bg-gradient 
                     ${
                       errors.message && touched.message
@@ -159,12 +160,12 @@ export default function ContactForm() {
                 <ErrorMessage
                   name="message"
                   component="div"
-                  className="text-thirdColor"
+                  className="text-thirdColor text-sm md:text-md"
                 />
 
                 <button
                   type="submit"
-                  className="btn btn-outline w-4/5 bg-gradient shadow-customShadow
+                  className="w-full btn btn-outline bg-gradient shadow-customShadow
                    text-thirdColor border-secondaryColor px-4 py-2 rounded hover:bg-secondaryColor 
                    hover:text-thirdColor"
                 >

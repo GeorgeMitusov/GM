@@ -9,7 +9,8 @@ export default function ProjectsList() {
   ));
 
   return (
-    <section className="w-full h-auto py-36 bg-mainColor flex flex-col justify-center items-center border">
+    <section className="w-full h-auto py-36 bg-mainColor 
+      flex flex-col justify-center items-center">
 
       <section id="section1"></section>
 

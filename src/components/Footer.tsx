@@ -22,11 +22,9 @@ export default function Footer() {
 
   return (
     <footer className="w-full h-3/4 bg-mainColor flex flex-col justify-between items-center
-        border border-pink-400
       ">
       <div 
         className="h-16 w-full flex justify-between items-center
-        border border-emerald-400
         "
       >
         {socialLink}
@@ -36,7 +34,7 @@ export default function Footer() {
         <h1
           id="title"
           className="uppercase transition-all ease-in-out duration-700 
-             text-thirdColor text-8xl opacity-90 font-suisseInt peer-hover:text-red-300
+             text-thirdColor text-8xl text-center opacity-90 font-suisseInt peer-hover:text-red-300
           "
         >
           Get in touch{" "}
@@ -49,8 +47,8 @@ export default function Footer() {
           onMouseLeave={() => {
             document.getElementById("title")!.style.color = "#D3D3D3";
           }}
-          className="h-16 w-2/12 btn bg-thirdColor border-mainColor font-normal 
-            rounded-3xl text-mainColor z-50 absolute uppercase text-3xl
+          className="h-10 w-3/5 btn bg-thirdColor border-mainColor font-normal 
+            rounded-3xl text-mainColor z-50 absolute uppercase text-xl text-
             transition-all ease-in-out duration-700 
             hover:text-fourthColor hover:bg-mainColor hover:border-fourthColor 
             hover:scale-105 peer
