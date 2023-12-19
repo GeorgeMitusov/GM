@@ -14,14 +14,15 @@ export default function Main() {
       key={index}
       className="w-full flex flex-col justify-center mdMobile:justify-around items-center
         overflow-hidden text-center 
-        mdMobile:h-12 lgMobile:h-16 lgMobile:px-2 sm:px-8
+        mdMobile:h-12 lgMobile:h-16 md:h-20
+        lgMobile:px-2 sm:px-8
       "
     >
       <motion.p
         className="font-suisseWorks 
-          text-xs mdMobile:text-sm lgMobile:text-md
+          text-xs mdMobile:text-sm lgMobile:text-md md:text-lg
           font-thin leading-loose tracking-wide mr-1 mdMobile:tracking-wider
-            mdMobile:leading-relaxed lgMobile:leading-loose
+            mdMobile:leading-relaxed lgMobile:leading-loose md:leading-9 
           "
         initial={{ y: 100 }}
         animate={{ y: 0 }}
@@ -31,7 +32,8 @@ export default function Main() {
       </motion.p>
 
       <motion.p
-        className="font-suisseWorks text-xs mdMobile:text-sm lgMobile:text-md
+        className="font-suisseWorks 
+          text-xs mdMobile:text-sm lgMobile:text-md md:text-lg
           font-thin leading-loose tracking-wide"
         initial={{ y: 100 }}
         animate={{ y: 0 }}
@@ -52,10 +54,10 @@ export default function Main() {
       >
         
         <div 
-          className="w-10/12 lgMobile:w-11/12 sm:w-10/12 flex justify-around items-center overflow-hidden
+          className="w-10/12 lgMobile:w-11/12 sm:w-10/12 md:w-full flex justify-around items-center overflow-hidden
               font-suisseWorks text-fourthColor mb-2 lgMobile:mb-1 lgMobile:mt-10
-              text-2xl mdMobile:text-3xl lgMobile:text-4xl 
-              px-2 lgMobile:px-2.5 mdMobile:p-0
+              text-2xl mdMobile:text-3xl lgMobile:text-4xl md:text-5xl
+              px-2 lgMobile:px-2.5 md:px-10 mdMobile:p-0
           "
             // border border-pink-300
         >
@@ -67,7 +69,7 @@ export default function Main() {
       </div>
 
       <ScrollLink
-        className="w-5 h-12 cursor-pointer text-thirdColor hover:text-fourthColor"
+        className="w-5 md:w-6 h-12 cursor-pointer text-thirdColor hover:text-fourthColor"
         to="section1"
         smooth={true}
         duration={2000}
@@ -76,7 +78,7 @@ export default function Main() {
       >
         <motion.div
           className="w-full h-full flex justify-center items-center 
-            border rounded-3xl text-xs
+            border rounded-3xl text-xs md:text-sm
             transition ease-linear
           "
           initial={{ y: 200 }}

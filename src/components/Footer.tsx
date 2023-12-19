@@ -9,8 +9,8 @@ export default function Footer() {
     <a
       key={i.href}
       href={i.href}
-      className="w-1/5 mdMobile:w-3/12 sm:w-2/12
-        h-2/3 sm:h-2/4
+      className="w-1/5 mdMobile:w-3/12 sm:w-2/12 md:w-2/12
+        h-2/3 sm:h-2/4 md:h-3/5
       flex justify-center items-center"
     >
       <FontAwesomeIcon
@@ -23,11 +23,12 @@ export default function Footer() {
   ));
 
   return (
-    <footer className="w-full h-3/4 sm:h-5/6 bg-mainColor flex flex-col justify-between 
+    <footer className="w-full h-3/4 sm:h-5/6 md:h-full bg-mainColor flex flex-col justify-between 
         items-center 
       ">
       <div 
-        className="h-16 sm:h-20 w-full mdMobile:w-4/5 lgMobile:w-3/4 flex justify-between sm:justify-around items-center
+        className="h-16 sm:h-20 w-full mdMobile:w-4/5 lgMobile:w-3/4 md:w-3/5
+        flex justify-between sm:justify-around md:justify-between items-center
         "
         // border border-yellow-300
       >
@@ -38,9 +39,9 @@ export default function Footer() {
         <h1
           id="title"
           className="uppercase transition-all ease-in-out duration-700 
-             text-thirdColor text-8xl sm:text-custom10 text-center opacity-90 font-suisseInt
-              peer-hover:text-red-300 
-            mdMobile:tracking-wider lgMobile:tracking-widest sm:tracking-wider
+             text-thirdColor text-8xl sm:text-custom10 md:text-custom12 
+             text-center opacity-90 font-suisseInt peer-hover:text-red-300 
+            mdMobile:tracking-wider lgMobile:tracking-widest sm:tracking-wider 
             leading-relaxed sm:leading-snug
           "
         >

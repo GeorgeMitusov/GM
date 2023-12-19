@@ -46,7 +46,7 @@ export default function Project({ title, image, link }: ProjectDataModel) {
       initial="hidden"
       variants={variants}
     >
-      <a className="h-4/6 w-full p-4 mt-3 peer" href={link}>
+      <a className="h-4/6 w-full md:w-11/12 p-4 mt-3 peer" href={link}>
         <img
           src={image}
           alt="title"
@@ -60,7 +60,7 @@ export default function Project({ title, image, link }: ProjectDataModel) {
         className="card-body text-thirdColor transition ease-in-out 
           duration-700 peer-hover:text-fourthColor"
       >
-        <h2 className="card-title font-medium text-2xl mdMobile:text-3xl font-suisseWorks text-center">
+        <h2 className="card-title font-medium text-2xl mdMobile:text-3xl md:text-4xl font-suisseWorks text-center">
           {" "}
           {title}{" "}
         </h2>
