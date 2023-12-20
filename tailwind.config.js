@@ -28,6 +28,7 @@ module.exports = {
       fontSize: {
         custom10: '10rem',
         custom12: '12rem',
+        custom16: '16.5rem',
         custom17: "17rem",
       },
       fontFamily: {

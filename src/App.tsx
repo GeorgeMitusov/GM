@@ -34,7 +34,8 @@ function App() {
 function AppContent() {
   return (
     <motion.div
-      className="h-screen w-full bg-mainColor"
+    // border border-red-500
+      className="h-screen w-full bg-mainColor "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

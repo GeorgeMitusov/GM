@@ -15,14 +15,15 @@ export default function Main() {
       className="w-full flex flex-col justify-center mdMobile:justify-around items-center
         overflow-hidden text-center 
         mdMobile:h-12 lgMobile:h-16 md:h-20
-        lgMobile:px-2 sm:px-8
+        lgMobile:px-2 sm:px-8 lg:px-32
       "
     >
       <motion.p
         className="font-suisseWorks 
           text-xs mdMobile:text-sm lgMobile:text-md md:text-lg
-          font-thin leading-loose tracking-wide mr-1 mdMobile:tracking-wider
-            mdMobile:leading-relaxed lgMobile:leading-loose md:leading-9 
+          font-thin mr-1
+          tracking-wide mdMobile:tracking-wider lg:tracking-widest 
+          leading-loose mdMobile:leading-relaxed lgMobile:leading-loose md:leading-9 lg:leading-10 
           "
         initial={{ y: 100 }}
         animate={{ y: 0 }}
@@ -54,10 +55,11 @@ export default function Main() {
       >
         
         <div 
-          className="w-10/12 lgMobile:w-11/12 sm:w-10/12 md:w-full flex justify-around items-center overflow-hidden
-              font-suisseWorks text-fourthColor mb-2 lgMobile:mb-1 lgMobile:mt-10
-              text-2xl mdMobile:text-3xl lgMobile:text-4xl md:text-5xl
-              px-2 lgMobile:px-2.5 md:px-10 mdMobile:p-0
+          className="w-10/12 lgMobile:w-11/12 sm:w-10/12 md:w-full lg:w-11/12
+            flex justify-around items-center overflow-hidden
+            font-suisseWorks text-fourthColor mb-2 lg:mb-3 lgMobile:mb-1 lgMobile:mt-10
+            text-2xl mdMobile:text-3xl lgMobile:text-4xl md:text-5xl lg:text-6xl
+            px-2 lgMobile:px-2.5 md:px-10 mdMobile:p-0
           "
             // border border-pink-300
         >
