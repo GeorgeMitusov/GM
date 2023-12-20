@@ -9,6 +9,9 @@ module.exports = {
       "smMobile": "320px",
       "mdMobile": "375px",
       "lgMobile": "425px",
+      "lLaptop": "1440px",
+      "3xl": "1700px",
+      "4xl": "1900px",
       ...defaultTheme.screens,
     },
     extend: {
@@ -28,8 +31,16 @@ module.exports = {
       fontSize: {
         custom10: '10rem',
         custom12: '12rem',
+        custom13: '12.5rem',
+        custom15: '14.3rem',
+        custom155: '15.8rem',
         custom16: '16.5rem',
         custom17: "17rem",
+        custom19: "19.5rem",
+      },
+      height:{
+        custom120: "26rem",
+        custom140: "30rem",
       },
       fontFamily: {
         sourceL: ["sourceSansL", "sans-serif"],
@@ -47,21 +58,12 @@ module.exports = {
 };
 
 /*
-smMobile:text-cyan-400 
-mdMobile:text-red-500 
-lgMobile:text-cyan-400
-sm:text-fuchsia-500 
-md:text-teal-500
-lg:text-slate-800 
-xl:text-sky-600 
-2xl:text-blue-700 
-*/
-
-
-/*
 sm	640px	@media (min-width: 640px) { ... }
 md	768px	@media (min-width: 768px) { ... }
 lg	1024px	@media (min-width: 1024px) { ... }
 xl	1280px	@media (min-width: 1280px) { ... }
+"lLaptop": "1440px",
 2xl	1536px	@media (min-width: 1536px) { ... }
+"3xl": "1700px",
+"4xl": "1900px",
 */

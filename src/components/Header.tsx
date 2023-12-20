@@ -18,8 +18,8 @@ export default function Header() {
   return (
     <header className="navbar h-1/6 flex justify-between">
       <motion.span
-        className="ml-4 cursor-pointer font-creattion 
-          text-4xl lgMobile:text-5xl 
+        className="ml-4 lg:ml-6 cursor-pointer font-creattion 
+          text-4xl lgMobile:text-5xl xl:text-6xl
          transition ease-in-out duration-300 hover:text-fourthColor
         "
         initial="hidden"
@@ -31,7 +31,7 @@ export default function Header() {
       </motion.span>
 
       <motion.button
-        className="btn btn-ghost font-thin font-selinoItalic 
+        className="btn btn-ghost lg:mr-2 font-thin font-selinoItalic 
           text-xl lgMobile:text-2xl md:text-3xl transition ease-in-out duration-300
            hover:text-fourthColor
         "

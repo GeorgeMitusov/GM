@@ -37,7 +37,7 @@ export default function Project({ title, image, link }: ProjectDataModel) {
 
   return (
     <motion.div
-      className="card w-11/12 bg-gradient shadow-xl mb-48 
+      className="card h-custom120 sm:h-96 xl:h-custom140 w-11/12 bg-gradient shadow-xl mb-48 
         cursor-pointer border-secondaryColor border-2 rounded-3xl 
         flex items-center justify-center
       "
@@ -46,21 +46,23 @@ export default function Project({ title, image, link }: ProjectDataModel) {
       initial="hidden"
       variants={variants}
     >
-      <a className="h-4/6 w-full md:w-11/12 p-4 mt-3 peer" href={link}>
+      <a className="h-4/5 w-full md:w-11/12 p-4 sm:px-6 lg:p-0 lg:px-2 lg:pt-2 mt-3 peer" href={link}>
         <img
           src={image}
           alt="title"
-          className="rounded-2xl w-full h-80 border-secondaryColor  
+          className="rounded-2xl w-full h-full border-secondaryColor  
             shadow-customShadow transition ease-in-out delay-150 duration-700 
             outline-none bg-contain hover:translate-y-3 hover:shadow-none
           "
         />
       </a>
       <div
-        className="card-body text-thirdColor transition ease-in-out 
+        className="card-body w-full h-1/5 text-thirdColor transition ease-in-out
+          flex justify-center items-center 
           duration-700 peer-hover:text-fourthColor"
       >
-        <h2 className="card-title font-medium text-2xl mdMobile:text-3xl md:text-4xl font-suisseWorks text-center">
+        <h2 className="card-title font-medium text-2xl mdMobile:text-3xl 
+          font-suisseWorks text-center">
           {" "}
           {title}{" "}
         </h2>

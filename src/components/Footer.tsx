@@ -11,7 +11,8 @@ export default function Footer() {
       href={i.href}
       className="w-1/5 mdMobile:w-3/12 sm:w-2/12 md:w-2/12
         h-2/3 sm:h-2/4 md:h-3/5
-      flex justify-center items-center"
+      flex justify-center items-center
+      "
     >
       <FontAwesomeIcon
         className="h-5/6 w-2/4 p-3 text-thirdColor cursor-pointer border-2 rounded-full 
@@ -25,15 +26,15 @@ export default function Footer() {
   ));
 
   return (
-    <footer className="w-full h-3/4 sm:h-5/6 md:h-full lg:h-auto
+    <footer className="w-full h-3/4 sm:h-5/6 md:h-full lg:h-auto xl:h-screen
        bg-mainColor flex flex-col justify-between items-center 
       ">
       <div 
-        className="h-16 sm:h-20 w-full mdMobile:w-4/5 lgMobile:w-3/4 md:w-3/5 lg:w-2/4
-        flex justify-between sm:justify-around md:justify-between items-center
-        lg:mb-24
+        className="h-16 sm:h-20 w-full mdMobile:w-4/5 lgMobile:w-3/4 md:w-3/5 lg:w-2/4 xl:w-2/5
+          flex justify-around mdMobile:justify-between sm:justify-around md:justify-between items-center 
+          lg:mb-24 
         "
-        // border border-yellow-500
+        // border border-red-500
       >
         {socialLink}
       </div>
@@ -43,10 +44,12 @@ export default function Footer() {
         <h1
           id="title"
           className="uppercase transition-all ease-in-out duration-700 
-             text-thirdColor text-8xl sm:text-custom10 md:text-custom12 lg:text-custom16
-             text-center opacity-90 font-suisseInt peer-hover:text-red-300 
-            mdMobile:tracking-wider lgMobile:tracking-widest sm:tracking-wider 
-            leading-relaxed sm:leading-snug
+            text-thirdColor text-8xl sm:text-custom10 md:custom12
+            lg:text-custom16 xl:text-custom13 2xl:text-custom15 3xl:text-custom155 4xl:text-custom17
+            text-center opacity-90 font-suisseInt peer-hover:text-red-300 
+            mdMobile:tracking-wider lgMobile:tracking-widest sm:tracking-wider xl:tracking-normal
+            2xl:tracking-tight
+            leading-relaxed sm:leading-snug lg:leading-tight xl:leading-none
           "
         >
           Get in touch{" "}
@@ -59,8 +62,9 @@ export default function Footer() {
           onMouseLeave={() => {
             document.getElementById("title")!.style.color = "#D3D3D3";
           }}
-          className="h-10 lg:h-16 w-3/5 btn bg-thirdColor border-mainColor font-normal 
-            rounded-3xl text-mainColor z-50 absolute uppercase text-xl 
+          className="h-10 lg:h-16 xl:h-12 w-3/5 lg:w-2/5 xl:w-1/5 btn bg-thirdColor border-mainColor 
+            font-normal rounded-3xl text-mainColor z-50 absolute uppercase 
+            text-xl xl:text2xl
             transition-all ease-in-out duration-700 
             hover:text-fourthColor hover:bg-mainColor hover:border-fourthColor 
             hover:scale-105 peer

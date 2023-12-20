@@ -12,19 +12,21 @@ export default function Main() {
   const block = mainTitleData.map((item, index) => (
     <div
       key={index}
-      className="w-full flex flex-col justify-center mdMobile:justify-around items-center
+      className="w-full flex flex-col lg:flex-row justify-center mdMobile:justify-around lg:justify-center
+        items-center
         overflow-hidden text-center 
-        mdMobile:h-12 lgMobile:h-16 md:h-20
-        lgMobile:px-2 sm:px-8 lg:px-32
+        lg:h-10
+        mdMobile:px-2 sm:px-6 lg:p-0
       "
+      // border border-red-500
     >
       <motion.p
         className="font-suisseWorks 
-          text-xs mdMobile:text-sm lgMobile:text-md md:text-lg
-          font-thin mr-1
-          tracking-wide mdMobile:tracking-wider lg:tracking-widest 
-          leading-loose mdMobile:leading-relaxed lgMobile:leading-loose md:leading-9 lg:leading-10 
-          "
+          text-xs mdMobile:text-sm lgMobile:text-md md:text-md lg:text-lg
+          font-thin mr-1 
+          tracking-wide mdMobile:tracking-wider  
+          leading-loose mdMobile:leading-loose md:leading-9 lg:leading-none 
+        "
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, delay: item.delay1, ease: "easeIn" }}
@@ -34,8 +36,11 @@ export default function Main() {
 
       <motion.p
         className="font-suisseWorks 
-          text-xs mdMobile:text-sm lgMobile:text-md md:text-lg
-          font-thin leading-loose tracking-wide"
+          text-xs mdMobile:text-sm lgMobile:text-md md:text-md lg:text-lg
+          font-thin 
+          tracking-wide mdMobile:tracking-wider
+          leading-loose mdMobile:leading-loose
+        "
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, delay: item.delay2, ease: "easeIn" }}
@@ -46,26 +51,44 @@ export default function Main() {
   ));
 
   return (
-    <div className="hero h-5/6 lgMobile:h-4/5 flex flex-col justify-around 
-      ">
-      <div 
-        className="w-full sm:w-9/12 h-full mdMobile:h-5/6 flex flex-col justify-center items-center
+    <div
+      className="hero h-5/6 lgMobile:h-4/5 flex flex-col justify-around 
+      
+      "
+      // border border-red-500
+    >
+      <div
+        className="w-full sm:w-9/12 lg:w-10/12 h-5/6 mdMobile:h-5/6 
+          flex flex-col justify-center items-center
         "
-        // border border-cyan-300
+        // border border-red-500
       >
-        
-        <div 
-          className="w-10/12 lgMobile:w-11/12 sm:w-10/12 md:w-full lg:w-11/12
+        <div
+          className="w-full py-2 font-suisseWorks text-fourthColor mb-2 overflow-hidden
+            flex justify-center items-center 
+            lg:mb-3 lgMobile:mb-1 lgMobile:mt-10 md:mt-0
+            text-2xl mdMobile:text-3xl lgMobile:text-4xl lg:text-6xl
+            px-2 
+          "
+        >
+          <AnimatedText text="Front-end" delay={0.7} className="mr-2 lg:mr-6" />
+          <AnimatedText text="Developer" delay={0.9} />
+        </div>
+
+        {/* <div
+          className="w-10/12 lgMobile:w-11/12 sm:w-10/12 md:w-9/12 lg:w-10/12 
+            xl:w-8/12 lLaptop:w-7/12 2xl:w-7/12
             flex justify-around items-center overflow-hidden
             font-suisseWorks text-fourthColor mb-2 lg:mb-3 lgMobile:mb-1 lgMobile:mt-10
-            text-2xl mdMobile:text-3xl lgMobile:text-4xl md:text-5xl lg:text-6xl
-            px-2 lgMobile:px-2.5 md:px-10 mdMobile:p-0
+            text-2xl mdMobile:text-3xl lgMobile:text-4xl lg:text-6xl
+            px-2 lgMobile:px-2.5 md:py-2 md:px-8 lg:px-12 xl:px-10 2xl:px-16 mdMobile:p-0
+            border border-red-500
           "
-            // border border-pink-300
+          // border border-pink-300
         >
           <AnimatedText text="Front-end" delay={0.7} />
           <AnimatedText text="Developer" delay={0.9} />
-        </div>
+        </div> */}
 
         {block}
       </div>
@@ -93,6 +116,7 @@ export default function Main() {
     </div>
   );
 }
+
 
 
 // import { motion } from "framer-motion";
@@ -133,12 +157,12 @@ export default function Main() {
 
 //   return (
 //     <div className="hero h-5/6 flex flex-col justify-center">
-//       <div 
-//         className="w-3/5 h-3/5 mb-36 flex flex-col justify-center items-center 
+//       <div
+//         className="w-3/5 h-3/5 mb-36 flex flex-col justify-center items-center
 //         "
 //       >
-        
-//         <div 
+
+//         <div
 //           className="w-2/3 p-2 mb-3 flex justify-around overflow-hidden font-suisseWorks
 //            text-fourthColor text-7xl"
 //         >
