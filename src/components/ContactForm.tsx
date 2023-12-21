@@ -90,13 +90,9 @@ export default function ContactForm() {
     <dialog id="my_modal_2" className="modal">
       <div
         className="modal-box w-5/6 max-w-3xl h-3/4 4xl:h-2/4 bg-mainColor border-secondaryColor
-          border-2 flex flex-col items-center justify-center 
-        "
-        // border border-red-500
+          border-2 flex flex-col items-center justify-center"
       >
         <AnimatePresence>{messageShow && succMsg}</AnimatePresence>
-
-        {/* <button className="btn btn-outline btn-thirdColor" onClick={() => setMessageShow(true)}> show </button> */}
 
         <Formik
           initialValues={{
@@ -107,12 +103,8 @@ export default function ContactForm() {
           validationSchema={validationSchema}
           onSubmit={handleSubmit}
         >
-          {/* border border-emerald-400 */}
           {({ errors, touched }) => (
-            <Form className="w-full md:w-5/6 h-3/4 4xl:h-4/5 flex items-center justify-center 
-            ">
-          {/* border border-red-500 */}
-
+            <Form className="w-full md:w-5/6 h-3/4 4xl:h-4/5 flex items-center justify-center">
               <div className="w-full h-5/6 flex flex-col items-center justify-between ">
                 <Field
                   type="text"
@@ -137,9 +129,7 @@ export default function ContactForm() {
                   placeholder="Email"
                   className={`w-full h-12 input input-bordered input-mainColor shadow-customShadow 
                     border border-secondaryColor text-thirdColor  
-                    bg-gradient ${
-                      errors.email && touched.email ? "border-thirdColor" : ""
-                    }
+                    bg-gradient ${errors.email && touched.email ? "border-thirdColor" : ""}
                   `}
                 />
                 <ErrorMessage

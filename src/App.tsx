@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { ContextProvider, useWebsiteContext } from "./context/context";
+import { useWebsiteContext } from "./context/context";
 import { motion, AnimatePresence } from "framer-motion";
 
 import Header from "./components/Header";
@@ -14,19 +14,17 @@ import Loader from "./components/Loader";
 function App() {
   const { loader, setLoader } = useWebsiteContext();
 
-  // useEffect(() => {
-  //   setLoader(true);
+  useEffect(() => {
+    setLoader(true);
 
-  //   setTimeout(() => {
-  //     setLoader(false);
-  //   }, 3500);
-  // }, []);
+    setTimeout(() => {
+      setLoader(false);
+    }, 3500);
+  }, []);
 
   return (
     <AnimatePresence>
-      {/* {loader ? <Loader /> : <AppContent />} */}
-      {/* <Loader/> */}
-      <AppContent />
+      {loader ? <Loader /> : <AppContent />}
     </AnimatePresence>
   );
 }
@@ -34,8 +32,7 @@ function App() {
 function AppContent() {
   return (
     <motion.div
-    // border border-red-500
-      className="h-screen w-full bg-mainColor "
+      className="h-screen w-full bg-mainColor"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}

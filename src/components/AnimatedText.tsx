@@ -6,15 +6,19 @@ interface AnimatedTextProps {
   className?: string;
 }
 
-export default function AnimatedText({ text, delay, className }: AnimatedTextProps) {
+export default function AnimatedText({
+  text,
+  delay,
+  className,
+}: AnimatedTextProps) {
   return (
     <motion.div
       initial={{ y: 150 }}
       animate={{ y: 0 }}
       transition={{ duration: 1, delay: delay, ease: "easeIn" }}
-      className={` ${className}`}
+      className={`${className}`}
     >
-      <span >{text}</span>
+      <span>{text}</span>
     </motion.div>
   );
 }
