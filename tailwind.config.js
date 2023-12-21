@@ -30,17 +30,21 @@ module.exports = {
       },
       fontSize: {
         custom10: '10rem',
+        custom11: '11rem',
         custom12: '12rem',
         custom13: '12.5rem',
         custom15: '14.3rem',
         custom155: '15.8rem',
         custom16: '16.5rem',
-        custom17: "17rem",
+        custom17: "17.5rem",
         custom19: "19.5rem",
       },
       height:{
         custom120: "26rem",
         custom140: "30rem",
+      },
+      borderWidth: {
+        custom: '.15rem'
       },
       fontFamily: {
         sourceL: ["sourceSansL", "sans-serif"],

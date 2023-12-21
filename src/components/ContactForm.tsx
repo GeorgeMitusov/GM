@@ -89,8 +89,10 @@ export default function ContactForm() {
   return (
     <dialog id="my_modal_2" className="modal">
       <div
-        className="modal-box w-5/6 max-w-3xl h-3/4 bg-mainColor border-secondaryColor
-          border-2 flex flex-col items-center justify-center "
+        className="modal-box w-5/6 max-w-3xl h-3/4 4xl:h-2/4 bg-mainColor border-secondaryColor
+          border-2 flex flex-col items-center justify-center 
+        "
+        // border border-red-500
       >
         <AnimatePresence>{messageShow && succMsg}</AnimatePresence>
 
@@ -107,7 +109,10 @@ export default function ContactForm() {
         >
           {/* border border-emerald-400 */}
           {({ errors, touched }) => (
-            <Form className="w-full md:w-5/6 h-3/4 flex items-center justify-center ">
+            <Form className="w-full md:w-5/6 h-3/4 4xl:h-4/5 flex items-center justify-center 
+            ">
+          {/* border border-red-500 */}
+
               <div className="w-full h-5/6 flex flex-col items-center justify-between ">
                 <Field
                   type="text"
