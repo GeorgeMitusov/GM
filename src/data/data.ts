@@ -74,7 +74,7 @@ export const projectsData = [
   {
     image: Pic3,
     title: 'Currency Converter',
-    link: 'https://currency-swap.onrender.com'
+    link: 'https://currency-exchange-ashy.vercel.app/'
   },
   {
     image: Pic6,
