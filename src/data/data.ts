@@ -67,14 +67,14 @@ export const projectsData = [
     link: 'https://gallery-app-cm73.onrender.com'
   },
   {
-    image: Pic7,
-    title: 'Task Tracker',
-    link: 'https://task-tracker-jyxt.onrender.com'
-  },
-  {
     image: Pic3,
     title: 'Currency Converter',
     link: 'https://currency-exchange-ashy.vercel.app/'
+  },
+  {
+    image: Pic7,
+    title: 'Task Tracker',
+    link: 'https://task-tracker-jyxt.onrender.com'
   },
   {
     image: Pic6,

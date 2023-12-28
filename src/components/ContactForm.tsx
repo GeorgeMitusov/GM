@@ -88,9 +88,13 @@ export default function ContactForm() {
 
   return (
     <dialog id="my_modal_2" className="modal">
-      <div
+      <motion.div
         className="modal-box w-5/6 max-w-3xl h-3/4 4xl:h-2/4 bg-mainColor border-secondaryColor
           border-2 flex flex-col items-center justify-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1 }}
       >
         <AnimatePresence>{messageShow && succMsg}</AnimatePresence>
 
@@ -182,7 +186,7 @@ export default function ContactForm() {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </dialog>
   );
 }
