@@ -23,9 +23,7 @@ function App() {
   }, []);
 
   return (
-    <AnimatePresence>
-      {loader ? <Loader /> : <AppContent />}
-    </AnimatePresence>
+    <AnimatePresence>{loader ? <Loader /> : <AppContent />}</AnimatePresence>
   );
 }
 
