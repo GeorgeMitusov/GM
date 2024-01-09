@@ -1,5 +1,6 @@
 export interface ProjectDataModel {
-  image: string,
-  title: string,
-  link: string,
-};
+  image: string;
+  title: string;
+  link: string;
+  description: string;
+}

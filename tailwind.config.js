@@ -42,6 +42,7 @@ module.exports = {
       height:{
         custom120: "26rem",
         custom140: "30rem",
+        custom160: "40rem",
       },
       borderWidth: {
         custom: '.15rem'

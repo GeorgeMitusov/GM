@@ -133,7 +133,9 @@ export default function ContactForm() {
                   placeholder="Email"
                   className={`w-full h-12 input input-bordered input-mainColor shadow-customShadow 
                     border border-secondaryColor text-thirdColor  
-                    bg-gradient ${errors.email && touched.email ? "border-thirdColor" : ""}
+                    bg-gradient ${
+                      errors.email && touched.email ? "border-thirdColor" : ""
+                    }
                   `}
                 />
                 <ErrorMessage

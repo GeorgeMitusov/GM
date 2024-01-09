@@ -4,7 +4,7 @@ import { ProjectDataModel } from "../interfaces/ProjectDataModel";
 import { TitleDataModel } from "../interfaces/TitleDataModel";
 import { SocialInfoModel } from "../interfaces/SocialInfoModel";
 
-import { showModal } from '../utils/ShowModal';
+import { showModal } from "../utils/ShowModal";
 
 import { mainTitleData, projectsData, footerSocialsInfo } from "../data/data";
 
@@ -23,7 +23,7 @@ type ContextProps = {
   showTopBtn: boolean;
   setShowTopBtn: React.Dispatch<React.SetStateAction<boolean>>;
   loader: boolean;
-  setLoader: React.Dispatch<React.SetStateAction<boolean>>,
+  setLoader: React.Dispatch<React.SetStateAction<boolean>>;
   switchOnLoader: () => void;
   turnOffLoader: () => void;
 };
@@ -50,8 +50,10 @@ export function ContextProvider({ children }: ContextProviderProps) {
         showTopBtn,
         setShowTopBtn,
         footerSocialsInfo,
-        showModal, setLoader,
-        loader, switchOnLoader,
+        showModal,
+        setLoader,
+        loader,
+        switchOnLoader,
         turnOffLoader,
       }}
     >

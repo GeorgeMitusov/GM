@@ -17,10 +17,10 @@ export default function Main() {
     >
       <motion.p
         className="font-suisseWorks 
-          text-xs mdMobile:text-sm lgMobile:text-md md:text-md lg:text-lg
+          text-xs mdMobile:text-sm lgMobile:text-md md:text-base lg:text-lg
           font-thin mr-1 
           tracking-wide mdMobile:tracking-wider  
-          leading-loose mdMobile:leading-loose md:leading-9 lg:leading-none"
+          leading-loose mdMobile:leading-loose md:leading-10 lg:leading-none"
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, delay: item.delay1, ease: "easeIn" }}
@@ -29,10 +29,10 @@ export default function Main() {
       </motion.p>
 
       <motion.p
-        className="font-suisseWorks 
-          text-xs mdMobile:text-sm lgMobile:text-md md:text-md lg:text-lg
+        className="font-suisseWorks
+          text-xs mdMobile:text-sm lgMobile:text-md md:text-base lg:text-lg
           font-thin tracking-wide mdMobile:tracking-wider
-          leading-loose mdMobile:leading-loose"
+          leading-loose mdMobile:leading-loose md:leading-8"
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, delay: item.delay2, ease: "easeIn" }}
@@ -52,9 +52,13 @@ export default function Main() {
           className="w-full py-2 font-suisseWorks text-fourthColor mb-2 overflow-hidden
             flex justify-center items-center px-2 
             lg:mb-3 lgMobile:mb-1 lgMobile:mt-10 md:mt-0
-            text-2xl mdMobile:text-3xl lgMobile:text-4xl lg:text-6xl"
+            text-2xl mdMobile:text-3xl lgMobile:text-4xl md:text-5xl lg:text-6xl"
         >
-          <AnimatedText text="Front-end" delay={0.7} className="mr-2 lg:mr-6" />
+          <AnimatedText
+            text="Front-end"
+            delay={0.7}
+            className="mr-2 md:mr-4 lg:mr-6"
+          />
           <AnimatedText text="Developer" delay={0.9} />
         </div>
 
