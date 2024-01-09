@@ -97,7 +97,7 @@ export const projectsData = [
   {
     image: Pic1,
     title: "Barbican",
-    link: "https://gallery-app-cm73.onrender.com",
+    link: "https://gallery-two-gamma.vercel.app/",
     description: `Gallery Application. Page transition and other animations make a visual stunning effect for an user's experience.`,
   },
   {
