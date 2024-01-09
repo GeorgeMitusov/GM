@@ -3,7 +3,10 @@ import {
   faGithub,
   faTelegram,
 } from "@fortawesome/free-brands-svg-icons";
+import { faFile } from '@fortawesome/free-solid-svg-icons';
 import { TitleDataModel } from "../interfaces/TitleDataModel";
+
+import cv from '../assets/cv/CV_Mitusov.pdf';
 
 const Pic1 = require("../assets/Pic1.png") as string;
 const Pic2 = require("../assets/Pic2.jpg") as string;
@@ -131,5 +134,10 @@ export const footerSocialsInfo = [
     href: "https://telegram.me/callme_george",
     className: "telegram",
     icon: faTelegram,
+  },
+  {
+    href: cv,
+    className: "resume",
+    icon: faFile,
   },
 ];

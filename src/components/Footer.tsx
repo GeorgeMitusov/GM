@@ -5,34 +5,34 @@ import { useWebsiteContext } from "../context/context";
 export default function Footer() {
   const { footerSocialsInfo, showModal } = useWebsiteContext();
 
-  const socialLink = footerSocialsInfo.map((i) => (
-    <a
-      key={i.href}
-      href={i.href}
-      className="w-1/5 mdMobile:w-3/12 sm:w-2/12 md:w-2/12 3xl:w-1/6 4xl:w-1/5
-        h-2/3 sm:h-2/4 md:h-3/5 4xl:h-3/4
-        flex justify-center items-center"
-    >
-      <FontAwesomeIcon
-        className="h-5/6 w-2/4 p-3 text-thirdColor cursor-pointer border-2 4xl:border-custom rounded-full 
-          border-thirdColor transition-all ease-in-out duration-700 4xl:p-3
-          hover:border-fourthColor hover:scale-90 hover:text-fourthColor hover:border-opacity-0"
-        icon={i.icon}
-      />
-    </a>
-  ));
+  const socialLink = footerSocialsInfo.map((item, index) => {
+    const isLastItem = index === footerSocialsInfo.length - 1;
+
+    return (
+      <a
+        key={item.href}
+        href={item.href}
+        download={isLastItem ? "Resume" : undefined}
+        className="w-9/12 h-16 flex justify-center items-center"
+      >
+        <FontAwesomeIcon
+          className="h-4/6 w-5/12 lg:w-3/12 p-4 text-thirdColor cursor-pointer border-2 4xl:border-custom rounded-full 
+            border-thirdColor transition-all ease-in-out duration-700 4xl:p-3
+            hover:border-fourthColor hover:scale-90 hover:text-fourthColor hover:border-opacity-0"
+          icon={item.icon}
+        />
+      </a>
+    );
+  });
 
   return (
-    <footer
-      className="w-full h-3/4 sm:h-5/6 md:h-full lg:h-auto xl:h-4/6 4xl:h-auto
-      bg-mainColor flex flex-col justify-between items-center 
-    "
-    >
+    <footer className="w-full h-auto bg-mainColor flex flex-col justify-between items-center">
       <div
-        className="h-16 sm:h-20 w-full mdMobile:w-4/5 lgMobile:w-3/4 md:w-3/5 lg:w-2/4 xl:w-2/5 lLaptop:w-1/3
-          4xl:w-1/4
-          flex justify-around mdMobile:justify-between sm:justify-around md:justify-between 3xl:justify-around
-          items-center lg:mb-24"
+        className="h-custom160 lg:h-52 
+          w-2/5 mdMobile:w-1/3 sm:w-1/5 md:w-1/6 lg:w-8/12 xl:w-7/12 lLaptop:w-6/12 3xl:w-5/12 4xl:w-4/12
+          my-10 xl:mb-20 flex flex-col lg:flex-row 
+          justify-evenly items-center 
+        "
       >
         {socialLink}
       </div>
