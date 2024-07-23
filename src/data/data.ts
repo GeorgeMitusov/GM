@@ -16,6 +16,7 @@ const Pic5 = require("../assets/Pic5.jpg") as string;
 const Pic6 = require("../assets/Pic6.jpg") as string;
 const Pic7 = require("../assets/Pic7.png") as string;
 const Pic8 = require("../assets/Pic8.png") as string;
+const Pic9 = require("../assets/Pic9.png") as string;
 
 export const mainTitleData: TitleDataModel[] = [
   {
@@ -52,14 +53,23 @@ export const mainTitleData: TitleDataModel[] = [
 
 export const projectsData = [
   {
+    image: Pic9,
+    title: "Property Pulse",
+    link: "https://property-pulse-two-phi.vercel.app/",
+    description: `Next JS Project. Property Search. 
+      User can browse and manage rental properties. 
+      Mongo DB, API routes, Auth, etc. 
+    `,
+  },
+  {
     image: Pic2,
     title: "Shopping Cart",
     link: "https://paramount-shopping.onrender.com",
-    description: `Attempted to make an E-Commerce App that fetches data from a
+    description: `E-Commerce App. Fetches data from the
       server, offers different types of clothing, allows users to interact by
-      adding and removing items from a cart. On the checkout page,
-      the user can place an order by submitting a form. React, Context
-      API, Routing, Formik, etc. were used.
+      adding and removing items from the cart. At the checkout page,
+      user can place an order by submitting a form. 
+      React, Context API, Routing, Formik, etc. were used.
     `,
   },
   {
